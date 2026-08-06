@@ -13,7 +13,7 @@
 
 	//seems like the postCreateCommand runs whenever the container is built not opened
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "npm install -g @angular/cli",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
