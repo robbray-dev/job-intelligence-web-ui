@@ -60,7 +60,9 @@
               "buildTarget": "job-intel-ui:build:production"
             },
             "development": {
-              "buildTarget": "job-intel-ui:build:development"
+              "buildTarget": "job-intel-ui:build:development",
+              "host": "127.0.0.1",
+              "port": 4200
             }
           },
           "defaultConfiguration": "development"
