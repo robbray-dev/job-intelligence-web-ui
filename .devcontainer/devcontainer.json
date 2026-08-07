@@ -8,6 +8,7 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
+	// need to figure out why 4200 is only shown once in dev container logs
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [4200],
 
