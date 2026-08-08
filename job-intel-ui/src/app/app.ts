@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { JobIntelBanner } from './job-intel-banner/job-intel-banner';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, JobIntelBanner],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
