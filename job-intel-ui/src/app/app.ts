@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { BaseForPages } from './base-for-pages/base-for-pages';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, BaseForPages],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
