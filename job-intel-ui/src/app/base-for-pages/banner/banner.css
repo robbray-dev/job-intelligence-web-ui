@@ -6,19 +6,25 @@
 }
 h2 {
     display: inline-block;
+    border: 2px solid purple;
    
 }
 
 .banner-nav{
     display: inline-block;
+    border: 2px solid black;
 }
 ul {
+    margin: 0;
     list-style-type: none;
+    border: 2px solid green;
    
 }
 
 ul li {
-    float: left;
-    
-    
+    border: 2px solid red;
+}
+
+button {
+    border: 2px solid red;
 }
