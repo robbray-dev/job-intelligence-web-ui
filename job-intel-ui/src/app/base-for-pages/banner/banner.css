@@ -5,16 +5,20 @@
     color: white;
 }
 h2 {
-    margin: 0;
+    display: inline-block;
    
+}
+
+.banner-nav{
+    display: inline-block;
 }
 ul {
     list-style-type: none;
-    
+   
 }
 
 ul li {
     float: left;
-    margin: 10px;
+    
     
 }
