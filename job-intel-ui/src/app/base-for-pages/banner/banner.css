@@ -16,9 +16,9 @@ h2 {
 }
 ul {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     border: 2px solid green;
-   
 }
 
 ul li {
