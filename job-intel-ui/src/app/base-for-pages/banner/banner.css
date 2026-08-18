@@ -10,7 +10,7 @@ h2 {
    
 }
 
-.banner-nav{
+ul {
     display: inline-block;
     border: 2px solid black;
 }
