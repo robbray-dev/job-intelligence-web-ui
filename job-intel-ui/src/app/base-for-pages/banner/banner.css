@@ -1,4 +1,7 @@
 #banner {
+    position: relative;
+    top: 0px;
+    left: 0px;
     background-color: #004f98;
     height: 10vh;
     width: 100vw;
