@@ -29,6 +29,12 @@ ul li {
     border: 2px solid red;
 }
 
+ul li:last-child {
+    margin-right: 0px;
+    display: inline-block;
+    border: 2px solid red;
+}
+
 button {
     position: absolute;
     right: 80px;
