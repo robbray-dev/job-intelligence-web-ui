@@ -31,8 +31,6 @@ ul li {
 
 ul li:last-child {
     margin-right: 0px;
-    display: inline-block;
-    border: 2px solid red;
 }
 
 button {
