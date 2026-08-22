@@ -9,7 +9,7 @@
 h2 {
     display: inline-block;
     position: absolute;
-    top: 29px;
+    top: 15px;
     margin: 0;
     border: 2px solid purple;
    
@@ -18,7 +18,7 @@ h2 {
 ul {
     display: inline-block;
     position: absolute;
-    top: 29px;
+    top: 15px;
     right: 200px;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ ul li:last-child {
 
 button {
     position: absolute;
-    top: 29px;
+    top: 15px;
     right: 80px;
     border: 2px solid orange;
 }
