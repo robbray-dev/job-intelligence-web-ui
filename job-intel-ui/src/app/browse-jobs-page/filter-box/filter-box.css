@@ -1,0 +1,10 @@
+#filter-box{
+    margin-top: 20px;
+    width: 150px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+h3{
+    margin: 12px;
+}
