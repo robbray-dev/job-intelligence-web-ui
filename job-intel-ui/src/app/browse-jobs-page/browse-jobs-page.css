@@ -1,10 +1,10 @@
-h1 {
-    margin: 0;
-    border: 2px solid red;
-}
-
 #background-div{
     width: 100vw;
     height: 96.5vh;
     background-color: #d0d6e6;
+}
+
+h1 {
+    margin: 0;
+    border: 2px solid red;
 }
