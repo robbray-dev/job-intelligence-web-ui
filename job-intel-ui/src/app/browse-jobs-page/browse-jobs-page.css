@@ -1,12 +1,13 @@
 #background-div{
+    position: relative;
     width: 100vw;
     height: 96.5vh;
     background-color: #d0d6e6;
 }
 
 h1 {
+    position: absolute;
+    top: 30px;
     margin: 0;
-    position: relative;
-    top: 20px;
     border: 2px solid red;
 }
