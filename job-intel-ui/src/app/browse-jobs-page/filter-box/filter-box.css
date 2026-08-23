@@ -1,7 +1,8 @@
 #filter-box{
-    margin-top: 20px;
+    position: absolute;
     width: 150px;
     height: 300px;
+    top: 90px;
     border: 2px solid black;
 }
 
