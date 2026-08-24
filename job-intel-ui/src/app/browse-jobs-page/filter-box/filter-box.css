@@ -4,6 +4,8 @@
     height: 300px;
     top: 90px;
     border: 2px solid black;
+    resize: both;
+    overflow: auto;
 }
 
 h3{
@@ -12,4 +14,9 @@ h3{
 
 hr{
     margin: 6px 12px;
+}
+
+#remote{
+    display: inline-block;
+    margin-right: 0;
 }
