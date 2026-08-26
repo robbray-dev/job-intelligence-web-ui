@@ -4,10 +4,11 @@ import { NgToggleComponent } from 'ng-toggle-button';
 import { MatButtonModule } from '@angular/material/button';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { Options } from '@angular-slider/ngx-slider';
+import {MatDividerModule} from '@angular/material/divider';
 
 @Component({
   selector: 'app-filter-box',
-  imports: [MatCheckboxModule, NgToggleComponent, MatButtonModule, NgxSliderModule],
+  imports: [MatCheckboxModule, NgToggleComponent, MatButtonModule, NgxSliderModule, MatDividerModule],
   templateUrl: './filter-box.html',
   styleUrl: './filter-box.css',
 })

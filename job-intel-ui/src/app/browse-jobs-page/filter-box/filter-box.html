@@ -1,19 +1,19 @@
 <div id="filter-box">
     <h3>Filters</h3>
-    <hr>
+    <mat-divider></mat-divider>
     <h3>Role</h3>
     <mat-checkbox>Backend</mat-checkbox>
     <mat-checkbox>DevOps</mat-checkbox>
     <mat-checkbox>Full Stack</mat-checkbox>
     <mat-checkbox>Data</mat-checkbox>
-    <hr>
+    <mat-divider></mat-divider>
     <h3>Location</h3>
     <mat-checkbox>Remote</mat-checkbox>
     <mat-checkbox>San Fransico</mat-checkbox>
     <mat-checkbox>New York</mat-checkbox>
     <mat-checkbox>Austin</mat-checkbox>
     <mat-checkbox>Seattle</mat-checkbox>
-    <hr>
+    <mat-divider></mat-divider>
     <h3 id="remote">Remote Only</h3>
     <ng-toggle
       [value]="true"
@@ -22,17 +22,17 @@
         checked: '#f62d51'
       }"
     ></ng-toggle>
-   <hr>
+   <mat-divider></mat-divider>
 
    <h3>Salary Range</h3>
    <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
-   <hr>
+   <mat-divider></mat-divider>
    <h3>Skills</h3>
    <mat-checkbox>AWS</mat-checkbox>
     <mat-checkbox>Java</mat-checkbox>
     <mat-checkbox>SQL</mat-checkbox>
     <mat-checkbox>Docker</mat-checkbox>
-    <hr>
+    <mat-divider></mat-divider>
    <button matButton>Clear Filters</button>
    
 </div>
