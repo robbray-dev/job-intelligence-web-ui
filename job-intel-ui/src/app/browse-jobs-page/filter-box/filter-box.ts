@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NgToggleComponent } from 'ng-toggle-button';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-filter-box',
-  imports: [MatCheckboxModule, NgToggleComponent],
+  imports: [MatCheckboxModule, NgToggleComponent, MatButtonModule],
   templateUrl: './filter-box.html',
   styleUrl: './filter-box.css',
 })
