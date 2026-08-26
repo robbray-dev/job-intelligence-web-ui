@@ -27,9 +27,3 @@ ng-toggle{
     left: 120px;
  
 }
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    overflow-x: auto;
-}
