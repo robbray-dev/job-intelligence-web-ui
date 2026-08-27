@@ -9,5 +9,6 @@ h1 {
     position: absolute;
     top: 30px;
     margin: 0;
+    margin-left: 5vw;
     border: 2px solid red;
 }
