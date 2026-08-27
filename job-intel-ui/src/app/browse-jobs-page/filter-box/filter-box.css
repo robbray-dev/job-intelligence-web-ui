@@ -29,3 +29,7 @@ ng-toggle{
 mat-divider{
     margin: 6px 12px;
 }
+
+mat-checkbox{
+    display: block;
+}
