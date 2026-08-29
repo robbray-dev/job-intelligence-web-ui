@@ -8,22 +8,20 @@
 h1 {
   position: relative;
   top: 30px;
-  margin: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
   margin-left: 5vw;
   border: 2px solid red;
 }
 
-mat-form-field {
-  position: relative;
-}
-
 #inner-one {
   display: flex;
-  position: relative;
+  margin-left: 5vw;
+  margin-right: 5vw;
   border: 1px solid black;
 }
 
 #inner-two {
-  position: relative;
   border: 1px solid black;
 }
