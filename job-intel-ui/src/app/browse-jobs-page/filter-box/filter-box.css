@@ -1,5 +1,5 @@
 #filter-box {
-  position: absolute;
+  position: relative;
   width: 15vw;
   height: 60vh;
   top: 90px;

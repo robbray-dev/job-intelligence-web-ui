@@ -6,7 +6,7 @@
 }
 
 h1 {
-  position: absolute;
+  position: relative;
   top: 30px;
   margin: 0;
   margin-left: 5vw;
@@ -14,6 +14,16 @@ h1 {
 }
 
 mat-form-field {
-  margin-top: 90px;
-  margin-left: 12px;
+  position: relative;
+}
+
+#inner-one {
+  display: flex;
+  position: relative;
+  border: 1px solid black;
+}
+
+#inner-two {
+  position: relative;
+  border: 1px solid black;
 }
