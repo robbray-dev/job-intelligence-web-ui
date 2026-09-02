@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {afterRenderEffect, computed, signal, viewChild} from '@angular/core';
-import {Combobox, ComboboxPopup, ComboboxWidget} from '@angular/aria/combobox';
-import {Listbox, Option} from '@angular/aria/listbox';
-import {OverlayModule} from '@angular/cdk/overlay';
+import { afterRenderEffect, computed, signal, viewChild } from '@angular/core';
+import { Combobox, ComboboxPopup, ComboboxWidget } from '@angular/aria/combobox';
+import { Listbox, Option } from '@angular/aria/listbox';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-dropdown-button',
@@ -11,7 +11,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
   styleUrl: './dropdown-button.css',
 })
 export class DropdownButton {
-    readonly listbox = viewChild(Listbox);
+  readonly listbox = viewChild(Listbox);
 
   readonly selectedValues = signal<string[]>([]);
   readonly displayValue = computed(() => this.selectedValues()[0] || 'Select a label');
