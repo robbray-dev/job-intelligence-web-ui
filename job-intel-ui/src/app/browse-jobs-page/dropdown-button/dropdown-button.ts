@@ -17,16 +17,7 @@ export class DropdownButton {
   readonly displayValue = computed(() => this.selectedValues()[0] || 'Select a label');
   readonly popupExpanded = signal(false);
 
-  readonly labels = [
-    'Important',
-    'Starred',
-    'Work',
-    'Personal',
-    'To Do',
-    'Later',
-    'Read',
-    'Travel',
-  ];
+  readonly labels = ['Relevance', 'Newest Jobs', 'Oldest Jobs'];
 
   constructor() {
     afterRenderEffect(() => {
