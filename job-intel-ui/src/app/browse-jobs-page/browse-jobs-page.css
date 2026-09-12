@@ -1,7 +1,7 @@
 #background-div {
   position: relative;
   width: 100vw;
-  height: 96.5vh;
+  height: 93.5vh;
   background-color: #d0d6e6;
 }
 
@@ -25,6 +25,8 @@
 #inner-two {
   border: 1px solid black;
   margin-left: 2.5vw;
+  width: 80vw;
+  height: 80vh;
 }
 
 /* need to go over whats going on with display flex, do block elements now appear on the same line?*/
