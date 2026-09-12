@@ -29,8 +29,6 @@
   height: 80vh;
 }
 
-/* need to go over whats going on with display flex, do block elements now appear on the same line?*/
-
 #header-search {
   display: flex;
   justify-content: space-between;
