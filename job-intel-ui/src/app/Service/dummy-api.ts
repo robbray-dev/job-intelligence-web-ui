@@ -21,7 +21,7 @@ interface JobResponse {
 export class DummyApi {
   private readonly localJsonUrl = '/data/users.json';
 
-  getUsers(search: Signal<string>) {
+  getJobs(search: Signal<string>) {
     return httpResource<Job[]>(() => {
       const query = search().trim().toLowerCase();
 
