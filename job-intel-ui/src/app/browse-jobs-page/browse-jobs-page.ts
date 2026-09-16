@@ -12,10 +12,20 @@ import { DummyApi, Job } from '../Service/dummy-api';
   templateUrl: './browse-jobs-page.html',
   styleUrl: './browse-jobs-page.css',
 })
-export class BrowseJobsPage {
-  jobs: any;
+export class BrowseJobsPage implements OnInit {
+  jobs: any[] = [];
 
-  constructor(private service: DummyApi) {
-    this.jobs = this.service.getJobs();
+  constructor(private service: DummyApi) {}
+
+  ngOnInit(): void {
+    this.service.fetchJsonData().subscribe({
+      next: (data) => {
+        this.jobs = data;
+        console.log('JSON Data Loaded:', this.jobs);
+      },
+      error: (err) => {
+        console.error('Error loading JSON data:', err);
+      },
+    });
   }
 }

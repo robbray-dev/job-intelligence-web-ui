@@ -1,5 +1,6 @@
-import { httpResource } from '@angular/common/http';
-import { Service, Signal } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { inject, Service, Signal } from '@angular/core';
+import { Observable } from 'rxjs';
 
 export interface Job {
   id: number;
@@ -19,22 +20,13 @@ interface JobResponse {
 }
 @Service()
 export class DummyApi {
-  private readonly localJsonUrl = '/data/users.json';
+  private http = inject(HttpClient);
 
-  getJobs() {
-    return httpResource<Job[]>(() => {
-      return {
-        url: this.localJsonUrl,
+  fetchJsonData(): Observable<any> {
+    // Path to the JSON file (relative to the data folder)
+    const jsonUrl = 'data/jobs.json';
 
-        // Value available while the HTTP request is loading.
-        defaultValue: [],
-
-        // Convert UsersResponse to User[] and filter by name.
-
-        parse: (response: JobResponse) => {
-          return response;
-        },
-      };
-    });
+    // Use http.get() to fetch the file. Returns an Observable.
+    return this.http.get(jsonUrl);
   }
 }
