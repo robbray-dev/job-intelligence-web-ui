@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FilterBox } from './filter-box/filter-box';
-import { MatFormFieldModule } from '@angular/material/form-field'; 
-import { MatIconModule } from '@angular/material/icon'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { DropdownButton } from './dropdown-button/dropdown-button';
+import { DummyApi, Job } from '../Service/dummy-api';
 
 @Component({
   selector: 'app-browse-jobs-page',
@@ -11,4 +12,10 @@ import { DropdownButton } from './dropdown-button/dropdown-button';
   templateUrl: './browse-jobs-page.html',
   styleUrl: './browse-jobs-page.css',
 })
-export class BrowseJobsPage {}
+export class BrowseJobsPage {
+  jobs: any;
+
+  constructor(private service: DummyApi) {
+    this.jobs = this.service.getJobs();
+  }
+}

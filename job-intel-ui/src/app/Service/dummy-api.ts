@@ -21,10 +21,8 @@ interface JobResponse {
 export class DummyApi {
   private readonly localJsonUrl = '/data/users.json';
 
-  getJobs(search: Signal<string>) {
+  getJobs() {
     return httpResource<Job[]>(() => {
-      const query = search().trim().toLowerCase();
-
       return {
         url: this.localJsonUrl,
 
@@ -34,11 +32,7 @@ export class DummyApi {
         // Convert UsersResponse to User[] and filter by name.
 
         parse: (response: JobResponse) => {
-          if (!query) {
-            return response.jobs;
-          }
-
-          return response.jobs.filter((job) => job.title.toLowerCase().includes(query));
+          return response;
         },
       };
     });
