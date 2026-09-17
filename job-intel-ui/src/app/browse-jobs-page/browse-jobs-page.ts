@@ -13,7 +13,7 @@ import { DummyApi, Job } from '../Service/dummy-api';
   styleUrl: './browse-jobs-page.css',
 })
 export class BrowseJobsPage implements OnInit {
-  jobs: any[] = [];
+  jobs: Job[] = [];
 
   constructor(private service: DummyApi) {}
 
