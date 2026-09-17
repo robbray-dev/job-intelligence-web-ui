@@ -15,18 +15,15 @@ export interface Job {
   skills: string[];
 }
 
-interface JobResponse {
-  jobs: Job[];
-}
 @Service()
 export class DummyApi {
   private http = inject(HttpClient);
 
-  fetchJsonData(): Observable<any> {
+  fetchJsonData(): Observable<Job[]> {
     // Path to the JSON file (relative to the data folder)
     const jsonUrl = 'data/jobs.json';
 
     // Use http.get() to fetch the file. Returns an Observable.
-    return this.http.get(jsonUrl);
+    return this.http.get<Job[]>(jsonUrl);
   }
 }
