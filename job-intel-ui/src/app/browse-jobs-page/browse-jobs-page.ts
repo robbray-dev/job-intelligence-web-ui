@@ -5,10 +5,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { DropdownButton } from './dropdown-button/dropdown-button';
 import { DummyApi, Job, JobResponse } from '../Service/dummy-api';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-browse-jobs-page',
-  imports: [FilterBox, MatFormFieldModule, MatIconModule, MatInputModule, DropdownButton],
+  imports: [
+    FilterBox,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    DropdownButton,
+    MatButtonModule,
+  ],
   templateUrl: './browse-jobs-page.html',
   styleUrl: './browse-jobs-page.css',
 })
