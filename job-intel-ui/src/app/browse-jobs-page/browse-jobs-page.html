@@ -13,7 +13,25 @@
       <h3>437 Backend Jobs available</h3>
       <div id="job-listing-container">
         @for (job of jobsArray; track job.id) {
-          <p>{{ job.title }}</p>
+          <div id="job-entry">
+            <h4>
+              {{ job.title }}
+            </h4>
+            <div>
+              <span>{{ job.companyName }}</span>
+              <span> {{ job.location }}</span>
+              <span> {{ job.postedDate }}</span>
+            </div>
+
+            <div>
+              <span> {{ job.salaryMin }} - {{ job.salaryMax }} </span>
+              <div id="skill grouping">
+                @for (skill of job.skills; track $index) {
+                  <span> {{ skill }}</span>
+                }
+              </div>
+            </div>
+          </div>
         }
       </div>
     </div>
