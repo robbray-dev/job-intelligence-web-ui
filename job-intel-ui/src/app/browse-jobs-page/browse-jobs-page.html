@@ -11,7 +11,11 @@
         <h2 id="header-one-search">Backend Jobs</h2>
       </div>
       <h3>437 Backend Jobs available</h3>
-      <div id="job-listing-container"></div>
+      <div id="job-listing-container">
+        @for (job of jobsArray; track job.id) {
+          <p>{{ job.title }}</p>
+        }
+      </div>
     </div>
   </div>
 </div>
