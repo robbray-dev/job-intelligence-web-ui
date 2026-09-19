@@ -14,18 +14,19 @@ import { DummyApi, Job, JobResponse } from '../Service/dummy-api';
 })
 export class BrowseJobsPage implements OnInit {
   jobs: JobResponse | undefined;
+  jobsArray: Job[];
+  titleH: string | undefined;
 
-  constructor(private service: DummyApi) {}
+  constructor(private service: DummyApi) {
+    this.jobsArray = [];
+  }
 
   ngOnInit(): void {
     this.service.fetchJsonData().subscribe({
       next: (data) => {
         this.jobs = data;
-        const jobArray = this.jobs.jobs;
-
-        jobArray.forEach((job: Job) => {
-          console.log('job title here', job.title);
-        });
+        this.jobsArray = data.jobs;
+        this.titleH = this.jobs.jobs[0].title;
       },
       error: (err) => {
         console.error('Error loading JSON data:', err);
