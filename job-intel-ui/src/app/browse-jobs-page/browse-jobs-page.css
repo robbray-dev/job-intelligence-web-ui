@@ -48,3 +48,8 @@
 #job-entry {
   border: 1px solid black;
 }
+
+#row-one {
+  display: flex;
+  justify-content: space-between;
+}
