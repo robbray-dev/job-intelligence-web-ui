@@ -27,10 +27,10 @@
               <span> {{ job.salaryMin }} - {{ job.salaryMax }} </span>
               <div id="skill grouping">
                 @for (skill of job.skills; track $index) {
-                  <span> {{ skill }}</span>
+                  <span> {{ skill }} </span>
                 }
               </div>
-              <button mat-button>View Job</button>
+              <button type="button">View Job</button>
             </div>
           </div>
         }

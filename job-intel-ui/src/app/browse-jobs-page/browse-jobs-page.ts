@@ -6,7 +6,6 @@ import { MatInputModule } from '@angular/material/input';
 import { DropdownButton } from './dropdown-button/dropdown-button';
 import { DummyApi, Job, JobResponse } from '../Service/dummy-api';
 import { MatButtonModule } from '@angular/material/button';
-
 @Component({
   selector: 'app-browse-jobs-page',
   imports: [
