@@ -58,3 +58,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+#skill-grouping {
+  width: 20vw;
+  display: inline-flex;
+  justify-content: space-around;
+}

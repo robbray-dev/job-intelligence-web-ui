@@ -25,10 +25,10 @@
               <span> {{ job.postedDate }}</span>
             </div>
 
-            <div>
-              <div id="row-two">
+            <div id="row-two">
+              <div>
                 <span> {{ job.salaryMin }} - {{ job.salaryMax }} </span>
-                <div id="skill grouping">
+                <div id="skill-grouping">
                   @for (skill of job.skills; track $index) {
                     <span> {{ skill }} </span>
                   }
