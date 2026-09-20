@@ -53,3 +53,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+#row-two {
+  display: flex;
+  justify-content: space-between;
+}

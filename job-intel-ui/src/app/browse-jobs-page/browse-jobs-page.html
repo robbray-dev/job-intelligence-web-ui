@@ -26,11 +26,13 @@
             </div>
 
             <div>
-              <span> {{ job.salaryMin }} - {{ job.salaryMax }} </span>
-              <div id="skill grouping">
-                @for (skill of job.skills; track $index) {
-                  <span> {{ skill }} </span>
-                }
+              <div id="row-two">
+                <span> {{ job.salaryMin }} - {{ job.salaryMax }} </span>
+                <div id="skill grouping">
+                  @for (skill of job.skills; track $index) {
+                    <span> {{ skill }} </span>
+                  }
+                </div>
               </div>
               <button type="button">View Job</button>
             </div>
