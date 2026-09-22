@@ -1,0 +1,10 @@
+name: Developement
+
+on:
+
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Test application
+    runs on:
