@@ -8,3 +8,5 @@ jobs:
   tests:
     name: Test application
     runs-on: ubuntu-latest
+    steps:
+      - name: "checkout repository"
