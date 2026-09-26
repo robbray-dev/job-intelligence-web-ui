@@ -33,3 +33,15 @@ mat-checkbox {
   justify-content: space-between;
   align-items: center;
 }
+input {
+  width: 5vw;
+}
+#range-holder {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vert {
+  display: flex;
+  flex-direction: column;
+}
